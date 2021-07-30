@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-magenta: hsl(300, 43%, 22%);
+    --primary-pink: hsl(333, 80%, 67%);
+
+    --secondary-paragraph:hsl(303, 10%, 53%);
+    --secondary-grayish: hsl(300, 24%, 96%);
+    --secondary-names: hsl(0, 0%, 100%);
+}
+
+/* Mobile first */
+
+body {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 5rem 1rem;
+}
+
+/* hero part */
+.cont-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cont-hero h1 {
+    padding: 1..3rem;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    color: var(--primary-magenta);
+    font-size: 40px;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cont-hero p {
+    color: var(--secondary-paragraph);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    line-height: 1.5rem;
+    
+}
+
+/* ratings section */
+
+.cont-ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.cont-rating-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    width: 90%;
+    background-color: var(--secondary-grayish);
+    padding: .5rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.cont-rating-card p {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    color: var(--primary-magenta);
+}
+
+/* Customers experience section */
+
+.cont-customers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.cont-card-customers {
+    background-color: var(--primary-magenta);
+    padding: 2.2rem;
+    border-radius: 12px;
+}
+
+.hero-card-customer {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.img-customer {
+    width: 18%;
+}
+.img-customer img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.name-customer {
+    font-family: 'Spartan', sans-serif;
+    font-weight:  500 ;
+    font-size: 16px;
+    color: var(--secondary-names);
+}
+
+.status-customer {
+    margin-top: .3rem;
+    font-family: 'Spartan', sans-serif;
+    font-weight:  400 ;
+    font-size: 16px;
+    color: var(--primary-pink);
+}
+
+.text-customer {
+    font-family: 'Spartan', sans-serif;
+    font-weight:  400 ;
+    color: var(--secondary-grayish);
+    line-height: 1.5rem;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    border: 1px outset var(--primary-magenta);
+    background-color: var(--secondary-grayish);
+    padding: .5rem;
+    border-radius: 7px;
+  }
+
+  .attribution a {
+    text-decoration: none;
+    color: var(--primary-magenta); 
+  }
+
+
+/* Responsive - desktop form */
+
+@media screen and (min-width:768px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 5rem 1rem;
+        justify-content: space-around;
+    }
+
+    .cont-hero {
+        width: 48%;
+        padding: 0 7rem;
+        text-align: left;
+    }
+
+    .cont-ratings {
+        width: 48%;
+    }
+
+    .cont-rating-card {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+        padding: 1rem;
+    }
+
+    .rating-second {
+        margin-left: 5rem;
+    }
+
+    .rating-third {
+        margin-left: 10rem;
+    }
+
+    .cont-customers {
+        flex-direction: row;
+        padding-left: 7rem;
+        padding-right: 1rem;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+    }
+
+    .cont-card-customers {
+     width: 30%;
+     height: 300px;
+    }
+
+    .cont-customer-second {
+        margin-top: 2rem;
+    }
+
+    .cont-customer-third {
+        margin-top: 4rem;
+        
+    }
+}
+
+/* fixing some bugs about the limit height of customer boxes and the overflow of text */
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    
+    .cont-card-customers {
+        height: 350px;
+        font-size: 14px;
+    }
+
+    .text-customer {
+        line-height: 1rem;
+    }
+}
