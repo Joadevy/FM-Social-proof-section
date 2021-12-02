@@ -1,4 +1,9 @@
-# FM-Social-proof-section
-This is my solution for the Frontend Mentor challenge "Social proof section"
-Live site URL: https://joadevy.github.io/FM-Social-proof-section/
-Have a good day! :)
+# Frontend Mentor - Stats preview card component
+
+Link site URL: https://joadevy.github.io/FM-Social-proof-section/
+
+## Welcome! 👋
+
+Thanks for checking out my front-end coding challenge.
+
+**Have a good day!** 🚀
