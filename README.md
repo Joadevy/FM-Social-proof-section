@@ -1,4 +1,4 @@
-# Frontend Mentor - Stats preview card component
+# Frontend Mentor - Social proof section
 
 Link site URL: https://joadevy.github.io/FM-Social-proof-section/
 
